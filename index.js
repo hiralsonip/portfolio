@@ -4,7 +4,6 @@ const port = process.env.PORT || 3000;
 
 // Your web application code here
 app.use(express.static('public'));
-app.use(express.static('portfolio'));
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
