@@ -90,6 +90,7 @@ h2 {
   #sideNav .navbar-brand .img-profile {
     max-width: 15rem;
     max-height: 15rem;
+    width: 100%;
     /* border: 0.5rem solid rgba(255, 255, 255, 0.2); */
   }
 
@@ -112,6 +113,10 @@ h2 {
 
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
+  }
+
+  .main-section {
+    width: 75%;
   }
 }
 
@@ -162,4 +167,25 @@ a:hover,
 a:focus,
 a:active {
   color: #824027;
+}
+
+@media (max-width: 992px) {
+  #image {
+    background-image: url("/img/Hiral_Soni.png");
+    height: 50rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+  }
+
+  #image::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 }
