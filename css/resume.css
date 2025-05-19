@@ -117,6 +117,7 @@ h2 {
 
   .main-section {
     width: 75%;
+    float: right;
   }
 }
 
