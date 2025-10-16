@@ -9,13 +9,6 @@ body {
   color: #868e96;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -67,6 +60,81 @@ h2 {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
+}
+
+section.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+.main-section {
+  width: 75%;
+}
+
+.bg-primary {
+  background-color: #BD5D38 !important;
+}
+
+.text-primary {
+  color: #BD5D38 !important;
+}
+
+a {
+  color: #BD5D38;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #824027;
+}
+
+/* .projects-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #image {
+    background-image: url("/img/Hiral_Soni.png");
+    height: 50rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+  }
+
+  #image::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 }
 
 @media (min-width: 992px) {
@@ -121,72 +189,9 @@ h2 {
   }
 }
 
-section.resume-section {
-  border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
-
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-.main-section {
-  width: 75%;
-}
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
 @media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.bg-primary {
-  background-color: #BD5D38 !important;
-}
-
-.text-primary {
-  color: #BD5D38 !important;
-}
-
-a {
-  color: #BD5D38;
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: #824027;
-}
-
-@media (max-width: 992px) {
-  #image {
-    background-image: url("/img/Hiral_Soni.png");
-    height: 50rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
-    position: relative;
-  }
-
-  #image::before {
-    content: "";
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
   }
 }
